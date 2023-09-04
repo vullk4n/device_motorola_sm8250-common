@@ -36,15 +36,13 @@ vendor/lib/rfsa/adsp/libtracker_6dof_skel_1130.so
 vendor/lib/rfsa/adsp/libtracker_6dof_skel_8250.so
 vendor/lib/rfsa/adsp/libtracker_6dof_skel_8350.so
 
-# Alarm
-vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
-vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.alarm@1.0.so
-
 # Alarm - from lmi qssi-user 12 SKQ1.211006.001 V14.0.5.0.SJKCNXM release-keys
-product/app/PowerOffAlarm/PowerOffAlarm.apk|1786cde8376f94e5dc23a7e92aa5e361fd71d1a7
+-product/app/PowerOffAlarm/PowerOffAlarm.apk|1786cde8376f94e5dc23a7e92aa5e361fd71d1a7
+vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/power_off_alarm|87c955a9fb7f56222ecc52f34cc1e72ae7ef72b7
+vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|62edf9bc20583c9bf57c366a3316964721eafbfd
+vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|82d2cf559e80bbb0980e284aa8efb795605a95cd
+vendor/lib64/vendor.qti.hardware.alarm@1.0.so|ec696fea7197fe45d84d0b965d5b17a556ef2614
 
 # Audio
 vendor/lib/libacdb-fts.so

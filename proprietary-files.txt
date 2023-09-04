@@ -54,6 +54,7 @@ vendor/lib/libAndroidAlgSys.so
 vendor/lib/libaudcal.so
 vendor/lib/libc++_shared.so
 vendor/lib/libqtigef.so
+vendor/lib/libMAM2_3-AlgFX-Coretex_A9.so
 vendor/lib/soundfx/libmaxxeffect-cembedded.so
 vendor/lib/soundfx/libmmieffectswrapper.so
 vendor/lib/soundfx/libspeakerbundle.so
@@ -313,6 +314,9 @@ vendor/lib64/vendor.qti.gnss@4.0.so|fc8d0947090d1fe55f38ce6a1cd61cf7f402fc82
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so|f8f65b093fe367ffe0a8f23d7c7ff88ec09b80c5
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so|8f1bd782c728fc275b8e78785a4866414d8c1cd8
 -vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
+
+# GPS - from pstar
+vendor/lib/libloc_api_wds.so
 
 # Graphics
 vendor/app/com.qualcomm.qti.gpudrivers.kona.api30/com.qualcomm.qti.gpudrivers.kona.api30.apk;PRESIGNED
@@ -717,6 +721,7 @@ system_ext/lib64/lib-imsvtutils.so
 system_ext/lib64/libimscamera_jni.so
 system_ext/lib64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
+system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon

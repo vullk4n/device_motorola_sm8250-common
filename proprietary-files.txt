@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from nio_retcn S1RN32.55-16-1
+# All unpinned blobs below are extracted from pstar user-13-T1RAA33.39-11-2-ef936f-release-keys
 
 # ADSP
 vendor/bin/adsprpcd
@@ -42,9 +42,9 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
-# Alarm - from lmi-user 11 RKQ1.200826.002
-product/app/PowerOffAlarm/PowerOffAlarm.apk|5885c09b8446d8b0c1f665bd9522792d79201cd7
-vendor/bin/power_off_alarm|160bd6e3ae23b4aba3b73d5c1865074beac77e7c
+# Alarm - from lmi qssi-user 12 SKQ1.211006.001 V14.0.5.0.SJKCNXM release-keys
+product/app/PowerOffAlarm/PowerOffAlarm.apk|1786cde8376f94e5dc23a7e92aa5e361fd71d1a7
+vendor/bin/power_off_alarm|87c955a9fb7f56222ecc52f34cc1e72ae7ef72b7
 
 # Audio
 vendor/lib/libacdb-fts.so
@@ -261,65 +261,60 @@ vendor/lib64/libtrustedapploader.so
 vendor/lib64/libwvhidl.so
 
 # Fingerprint
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-fpc
 vendor/bin/hw/fpc_ident:vendor/bin/fpc_ident
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets2.rc
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-fpc2.rc
 vendor/lib64/com.fingerprints.extension@1.0.so
-vendor/lib64/libets_fp_et5.so
-vendor/lib64/libets_teeclient.so
-vendor/lib64/vendor.egistec.hardware.fingerprint@2.0.so
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
-# GPS
-vendor/bin/loc_launcher
-vendor/bin/lowi-server
-vendor/bin/mlid
-vendor/bin/tloc_daemon
-vendor/bin/xtra-daemon
-vendor/etc/cacert_location.pem
-vendor/etc/init/tloc_daemon.rc
-vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
-vendor/etc/xtra_root_cert.pem
-vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
-vendor/lib64/libaoa.so
-vendor/lib64/libasn1cper.so
-vendor/lib64/libasn1crt.so
-vendor/lib64/libasn1crtx.so
-vendor/lib64/libcacertclient.so
-vendor/lib64/libcdfw.so
-vendor/lib64/libcdfw_remote_api.so
-vendor/lib64/libdataitems.so
-vendor/lib64/libgdtap.so
-vendor/lib64/libizat_client_api.so
-vendor/lib64/libizat_core.so
-vendor/lib64/liblbs_core.so
-vendor/lib64/libloc_api_v02.so
-vendor/lib64/libloc_socket.so
-vendor/lib64/liblocationservice.so
-vendor/lib64/liblocationservice_glue.so
-vendor/lib64/liblowi_client.so
-vendor/lib64/liblowi_wifihal.so
-vendor/lib64/libqcc_file_agent.so
-vendor/lib64/libslimclient.so
-vendor/lib64/libxtadapter.so
-vendor/lib64/libxtwifi_server_protocol.so
-vendor/lib64/libxtwifi_server_protocol_uri_v3.so
-vendor/lib64/vendor.qti.gnss@1.0.so
-vendor/lib64/vendor.qti.gnss@1.1.so
-vendor/lib64/vendor.qti.gnss@1.2.so
-vendor/lib64/vendor.qti.gnss@2.0.so
-vendor/lib64/vendor.qti.gnss@2.1.so
-vendor/lib64/vendor.qti.gnss@3.0.so
-vendor/lib64/vendor.qti.gnss@4.0-service.so
-vendor/lib64/vendor.qti.gnss@4.0.so
-vendor/lib64/vendor.qti.hardware.cacert@1.0.so
-vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
+# GPS - from nio - user 12 S1RTS32.41-20-16-1-3 22842 release-keys 
+vendor/bin/loc_launcher|7aa13f0d75c3e1685e88ecdebc4008f82e2b6233
+vendor/bin/lowi-server|d75b5654fa61d004fdf7caf77afb3832c25b3ccc
+vendor/bin/mlid|f161135c43cfcc68f25759459048ead4d8f16087
+vendor/bin/tloc_daemon|bb6682220052e3990fb497b07d45d0dd3934f515
+vendor/bin/xtra-daemon|d2d501b6d4b3b430d498ad3ab47d63fbca6b8144
+vendor/etc/cacert_location.pem|0789bf799c7e45d352a83e2f79ddb0cea86db85b
+vendor/etc/init/tloc_daemon.rc|9dd38e92847bc34f8a3228f4cd81ef14b6e89785
+vendor/etc/xtra_root_cert.pem|f55a31ec4d9cf8ce2724acadecf00c779f8767db
+vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|5d5b048ea1495522d1cbdf89da4a4029ca767474
+vendor/lib64/libaoa.so|6aacf99d44a05c80bf77ee01ac21da20ce98368d
+vendor/lib64/libasn1cper.so|15236de74b03454838cb69fb5817c04dd9984efa
+vendor/lib64/libasn1crt.so|6780d64f14411f0bb1e7cc4568651bfd7ea3badf
+vendor/lib64/libasn1crtx.so|a356949a94f173356bfec186b2f4f0bc38a1eb04
+vendor/lib64/libcacertclient.so|d73c1651d2a66a595a65edc43d5605501bc2fd73
+vendor/lib64/libcdfw.so|879ec0095789187243316666f584c1cdbe44c894
+vendor/lib64/libcdfw_remote_api.so|e43217af385097ea8d939a7c0cc60c3e092ad086
+vendor/lib64/libdataitems.so|9238ad62a8daf2da21b6a5eccd2b59944124be7b
+vendor/lib64/libgdtap.so|500675e4bee26627cda1f1cc87b8a6838f65b7a7
+vendor/lib64/libizat_client_api.so|378fda444381937b842245f08e7d880291e0628f
+vendor/lib64/libizat_core.so|db10fcf7de83d84838b6bcded5e4b5ef2f7ccf7d
+vendor/lib64/liblbs_core.so|b1104a614acf8fe29474565d4be21d9f97b8d6e5
+vendor/lib64/libloc_api_v02.so|8ab674b3a678c7cb35676ea830dfc25902f4f7a4
+vendor/lib64/libloc_socket.so|f6d30be3162df3c06377a2c1bfe176b344576834
+vendor/lib64/liblocationservice.so|178be2650b3a62100953627437f9f1cd8cafa6f2
+vendor/lib64/liblocationservice_glue.so|eb64e4c798d3014dd202f47aba779128e7ab72c7
+vendor/lib64/liblowi_client.so|a4ec2ce9d63900e94601b848df26b655b8116f04
+vendor/lib64/liblowi_wifihal.so|c869a6dc081714be47fd549b9e3e3a4a5a2ddf6d
+vendor/lib64/libqcc_file_agent.so|0345fc438536bc11f3e65999e0b750efb19ba9f9
+vendor/lib64/libslimclient.so|a0a9040a003019488894df10ceb2e86920de3f13
+vendor/lib64/libxtadapter.so|b46b0ad003e9738e7ee9d6e51722f63505c47323
+vendor/lib64/libxtwifi_server_protocol.so|ca42a0576b5b890338a1e04cd5d36aef6ebaee27
+vendor/lib64/libxtwifi_server_protocol_uri_v3.so|7fdac704f7c923b09dd3b658e6699c4ef2452cb8
+vendor/lib64/vendor.qti.gnss@1.0.so|f1923336ea3593f9ce7f262fd3e3ddba6dba64e2
+vendor/lib64/vendor.qti.gnss@1.1.so|b0a913199ce4a32f7566f8004d4674fb1a0a58a9
+vendor/lib64/vendor.qti.gnss@1.2.so|afb5f5c5b922952141c7f17d6a43e693d1cc2e7d
+vendor/lib64/vendor.qti.gnss@2.0.so|0635e6cbb5427d3b4842bcfcdf97f4678387c97e
+vendor/lib64/vendor.qti.gnss@2.1.so|aa93c689c3327cde5684b14ed58b146e122840b1
+vendor/lib64/vendor.qti.gnss@3.0.so|bbeee207a156c5662692b6f72ee33644b5181b88
+vendor/lib64/vendor.qti.gnss@4.0-service.so|e20ca72c386d403975c36bc68c624471691ed1d1
+vendor/lib64/vendor.qti.gnss@4.0.so|fc8d0947090d1fe55f38ce6a1cd61cf7f402fc82
+vendor/lib64/vendor.qti.hardware.cacert@1.0.so|f8f65b093fe367ffe0a8f23d7c7ff88ec09b80c5
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so|8f1bd782c728fc275b8e78785a4866414d8c1cd8
+-vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
 
 # Graphics
 vendor/app/com.qualcomm.qti.gpudrivers.kona.api30/com.qualcomm.qti.gpudrivers.kona.api30.apk;PRESIGNED
@@ -461,17 +456,12 @@ vendor/lib/libqcodec2_v4l2codec.so
 # Neural-networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml
 vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
 vendor/lib64/libhexagon_nn_stub.so
 vendor/lib64/libhta_hexagon_runtime.so
 vendor/lib64/unnhal-acc-adreno.so
 vendor/lib64/unnhal-acc-common.so
-vendor/lib64/unnhal-acc-hta.so
 vendor/lib64/unnhal-acc-hvx.so
-
-# NFC
-vendor/lib64/libpn557_fw.so
 
 # OEM
 vendor/bin/motobox
@@ -599,7 +589,6 @@ vendor/bin/qrtr-cfg
 vendor/bin/qrtr-ns
 vendor/bin/qti
 vendor/bin/rmt_storage
-vendor/bin/ssgtzd
 vendor/bin/tftp_server
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
@@ -713,7 +702,7 @@ vendor/radio/qcril_database/upgrade/9_version_qcrildb.sql
 system/etc/permissions/moto-telephony.xml:system_ext/etc/permissions/moto-telephony.xml
 system/framework/moto-telephony.jar:system_ext/framework/moto-telephony.jar
 
-# Radio - IMS (APK) - from patched source
+# Radio - IMS (APK) - from nio patched source
 system_ext/priv-app/ims/ims.apk|fe3c36c4d8fc9d7720cfd1833ea2ade51f6b5111
 
 # Radio - IMS
@@ -808,9 +797,7 @@ vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 # Sensor-configs
 vendor/etc/sensors/config/default_sensors.json
 vendor/etc/sensors/config/dynamic_sensors.json
-vendor/etc/sensors/config/icm4x6xx_0.json
 vendor/etc/sensors/config/irq.json
-vendor/etc/sensors/config/lsm6ds3c_0.json
 vendor/etc/sensors/config/mmc56x3x_0.json
 vendor/etc/sensors/config/mot_camgest.json
 vendor/etc/sensors/config/mot_chopchop.json
@@ -836,7 +823,6 @@ vendor/etc/sensors/config/sns_rotv.json
 vendor/etc/sensors/config/sns_smd.json
 vendor/etc/sensors/config/sns_tilt.json
 vendor/etc/sensors/config/sns_tilt_sw_disabled.json
-vendor/etc/sensors/config/vcnl36866_0.json
 vendor/etc/sensors/proto/descriptor.proto
 vendor/etc/sensors/proto/mot_barocal.proto
 vendor/etc/sensors/proto/mot_camgest.proto

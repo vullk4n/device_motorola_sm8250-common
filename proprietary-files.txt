@@ -704,8 +704,8 @@ vendor/radio/qcril_database/upgrade/9_version_qcrildb.sql
 system/etc/permissions/moto-telephony.xml:system_ext/etc/permissions/moto-telephony.xml
 system/framework/moto-telephony.jar:system_ext/framework/moto-telephony.jar
 
-# Radio - IMS (APK) - from nio patched source
-system_ext/priv-app/ims/ims.apk|fe3c36c4d8fc9d7720cfd1833ea2ade51f6b5111
+# Radio - IMS (APK) - from pstar patched source
+system_ext/priv-app/ims/ims.apk|c219304da58d4d90815d49b3c710c7b9dc93a4fa
 
 # Radio - IMS
 system_ext/app/ImsRcsService/ImsRcsService.apk

@@ -269,9 +269,6 @@ PRODUCT_PACKAGES += \
     libcrypto_shim.vendor
 
 # fastbootd
-PRODUCT_PACKAGES += \
-    fastbootd
-
 $(call soong_config_set_bool,fastbootd,zero_packet,true)
 
 # Fingerprint
@@ -446,7 +443,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/double-tap.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/double-tap.kl
 
 # UFFD GC
-OVERRIDE_ENABLE_UFFD_GC := false
+PRODUCT_ENABLE_UFFD_GC := true
+OVERRIDE_ENABLE_UFFD_GC := true
 
 # Remove packages
 PRODUCT_PACKAGES += \

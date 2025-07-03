@@ -441,6 +441,10 @@ PRODUCT_COPY_FILES += \
 # UFFD GC
 OVERRIDE_ENABLE_UFFD_GC := false
 
+# Remove packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # USB HAL
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.qti \

@@ -28,7 +28,6 @@ TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := generic
 TARGET_CPU_VARIANT_RUNTIME := cortex-a76
-
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
@@ -49,6 +48,11 @@ BOARD_USES_ALSA_AUDIO := true
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth
 
+# BUILD_BROKEN_*
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
+
 # Bootloader
 TARGET_NO_BOOTLOADER := true
 
@@ -57,23 +61,24 @@ TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE := true
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := \
-    $(COMMON_PATH)/config.fs \
-    $(COMMON_PATH)/mot_aids.fs
+    $(COMMON_PATH)/configs/config.fs \
+    $(COMMON_PATH)/configs/mot_aids.fs
 
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    $(COMMON_PATH)/vendor_framework_compatibility_matrix.xml \
+    $(COMMON_PATH)/configs/hidl/vendor_framework_compatibility_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
-DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
+DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/hidl/manifest.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 3
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 loop.max_part=7 cgroup.memory=nokmem,nosocket
+#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
@@ -88,10 +93,10 @@ TARGET_KERNEL_SOURCE := kernel/motorola/sm8250
 
 # Kernel Modules
 BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD)
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load))
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/configs/modules/modules.load))
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := \
     $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD) \
-    $(strip $(shell cat $(COMMON_PATH)/modules.load.recovery))
+    $(strip $(shell cat $(COMMON_PATH)/configs/modules/modules.load.recovery))
 TARGET_MODULE_ALIASES += \
     adsp_loader_dlkm.ko:audio_adsp_loader.ko \
     apr_dlkm.ko:audio_apr.ko \
@@ -127,13 +132,10 @@ BOARD_USES_METADATA_PARTITION := true
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
-
--include vendor/lineage/config/BoardConfigReservedSize.mk
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x06000000
 BOARD_DTBOIMG_PARTITION_SIZE := 0x1800000
 BOARD_ODMIMAGE_PARTITION_RESERVED_SIZE := 30720000
 BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 0x04000000
-
 BOARD_MOT_DP_GROUP_PARTITION_LIST := odm product system system_ext vendor
 BOARD_MOT_DP_GROUP_SIZE := 6438256640
 BOARD_SUPER_PARTITION_GROUPS := mot_dp_group
@@ -156,10 +158,10 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := kona
 
 # Properties
-TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
-TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/system_ext.prop
-TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
-TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/configs/props/product.prop
+TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/configs/props/system_ext.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/configs/props/system.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/configs/props/vendor.prop
 
 # Recovery
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true

@@ -25,8 +25,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
-<manifest version="1.0" type="device" target-level="6">
-    <kernel target-level="6"/>
+<manifest version="1.0" type="device" target-level="7">
     <!--ANT-->
     <!--
     <hal format="hidl">
@@ -545,25 +544,22 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
+    <!-- hal format="aidl">
         <name>android.hardware.bluetooth.audio</name>
-        <transport>hwbinder</transport>
-        <version>2.1</version>
+        <version>1</version>
         <interface>
-            <name>IBluetoothAudioProvidersFactory</name>
+            <name>IBluetoothAudioProviderFactory</name>
             <instance>default</instance>
         </interface>
     </hal>
-   <hal format="hidl">
+   <hal format="aidl">
        <name>vendor.qti.hardware.bluetooth_audio</name>
-       <transport>hwbinder</transport>
-       <version>2.1</version>
+       <version>1</version>
        <interface>
-            <name>IBluetoothAudioProvidersFactory</name>
+            <name>IBluetoothAudioProviderFactory</name>
             <instance>default</instance>
-       </interface>
-       <fqname>@2.1::IBluetoothAudioProvidersFactory/default</fqname>
-    </hal>
+       </interface >
+    </hal -->
     <hal format="hidl">
         <name>vendor.qti.hardware.btconfigstore</name>
         <transport>hwbinder</transport>

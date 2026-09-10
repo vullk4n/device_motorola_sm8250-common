@@ -21,6 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Derp stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+PRODUCT_PACKAGES += RemovePackages # Debloat
 
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
@@ -450,10 +451,6 @@ PRODUCT_COPY_FILES += \
 # UFFD GC
 PRODUCT_ENABLE_UFFD_GC := true
 OVERRIDE_ENABLE_UFFD_GC := true
-
-# Remove packages
-PRODUCT_PACKAGES += \
-    RemovePackages
 
 # USB HAL
 PRODUCT_PACKAGES += \

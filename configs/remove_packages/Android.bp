@@ -1,8 +1,7 @@
-android_app_import {
+android_app {
     name: "RemovePackages",
-    apk: "DebloatDummy.apk",
-    presigned: true,
-    preprocessed: true,
+    sdk_version: "current",
+    privileged: true,
 
     overrides: [
         "CalculatorGooglePrebuilt_85006267",
@@ -21,6 +20,4 @@ android_app_import {
     dex_preopt: {
         enabled: false,
     },
-
-    privileged: true,
 }
